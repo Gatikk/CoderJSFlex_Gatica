@@ -10,13 +10,16 @@ class Producto {
 }
 
 let productos = [
-    new Producto(1, "A1", 1200, 8),
-    new Producto(2, "A2", 2000, 7),
-    new Producto(3, "B1", 1500, 5),
-    new Producto(4, "B2", 1600, 10)
+    new Producto(1, "Termostato Inteligente", 70000, 8),
+    new Producto(2, "Enchufe Inteligente WiFi", 10000, 7),
+    new Producto(3, "Cámara de Seguridad WiFi", 70000, 5),
+    new Producto(4, "Bombilla LED Inteligente RGB", 16000, 10), 
+    new Producto(4, "Tira LED Inteligente RGB", 20000, 6), 
 ];
 
 function AgregarAlCarrito(prodId, cant) {
+    //falta lógica para verificar que la cantidad ingresada no supere el stock disponible del producto
+    //falta lógica para eliminar cantidad del stock "productos" al agregar al carrito
     if(carrito.find(x=>x.id === prodId)){
         let productoExistente = carrito.find(x=>x.id === prodId)
         if(productoExistente){
