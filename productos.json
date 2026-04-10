@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "nombre": "Termostato Inteligente",
+        "precio": 70000,
+        "stock": 8,
+        "imagen": "./assets/termostatointeligente.png"
+    },
+    {
+        "id": 2,
+        "nombre": "Enchufe Inteligente WiFi",
+        "precio": 10000,
+        "stock": 7,
+        "imagen": "./assets/enchufeinteligentewifi.png"
+    },
+    {
+        "id": 3,
+        "nombre": "Cámara de Seguridad WiFi",
+        "precio": 70000,
+        "stock": 5,
+        "imagen": "./assets/camaraseguridadwifi.png"
+    },
+    {
+        "id": 4,
+        "nombre": "Bombilla LED Inteligente RGB",
+        "precio": 16000,
+        "stock": 10,
+        "imagen": "./assets/bombillainteligentergb.png"
+    },
+    {
+        "id": 5,
+        "nombre": "Tira LED Inteligente RGB",
+        "precio": 20000,
+        "stock": 6,
+        "imagen": "./assets/tiraledrgb.png"
+    }
+]

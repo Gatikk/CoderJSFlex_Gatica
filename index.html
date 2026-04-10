@@ -2,10 +2,45 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Smartify | Tienda de Domótica</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+    <header>
+        <h1>Smartify</h1>
+        <div class="filtros-container">
+            <input type="text" id="input-buscador" placeholder="Buscar producto..." disabled>
+            
+            <select id="select-orden">
+                <option value="defecto">Ordenar por...</option>
+                <option value="menor">Menor precio</option>
+                <option value="mayor">Mayor precio</option>
+            </select>
+        </div>
+
+        <button id="btn-abrir-carrito">🛒 Ver Carrito (<span id="contador-carrito">0</span>)</button>
+    </header>
+    
+    <main>
+        <h2>Nuestros Productos</h2>
+        <div id="contenedor-productos" style="display: flex; gap: 20px; flex-wrap: wrap;"></div>
+    </main>
+
+    <aside id="panel-carrito" class="panel-oculto">
+        <div class="header-carrito">
+            <h2>Tu Carrito</h2>
+            <button id="btn-cerrar-carrito">Cerrar X</button>
+        </div>
+        
+        <div id="contenedor-carrito"></div>
+        <hr>
+        <p>Total: $<span id="precio-total">0</span></p>
+        <button id="btn-comprar">Realizar Compra</button>
+        <button id="btn-vaciar">Vaciar Carrito</button>
+    </aside>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="app.js"></script>
+    <script src="carrito.js"></script>
 </body>
 </html>
